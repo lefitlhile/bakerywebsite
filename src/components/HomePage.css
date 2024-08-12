@@ -1,0 +1,92 @@
+/* src/HomePage.css */
+
+.home-page {
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9; /* Light background color for fallback */
+  background-image: url('../images/backgro.jpg'); /* Path to your background image */
+  background-size: cover; /* Ensures the image covers the entire area */
+  background-position: center; /* Centers the background image */
+  background-attachment: fixed; /* Keeps the background image fixed during scrolling */
+  color: #333; /* Default text color */
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 2em;
+  color: #555;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #007bff; /* Blue underline for section headings */
+  padding-bottom: 5px;
+  display: inline-block;
+}
+
+.pastry-section {
+  margin: 30px 0;
+  background-color: rgba(255, 255, 255, 0.8); /* Light white background with opacity */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Space between images */
+}
+
+.image-item {
+  position: relative;
+  width: 200px; /* Adjust size as needed */
+}
+
+.home-image {
+  width: 100%; /* Makes image responsive to container */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.price-tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+p {
+  margin-top: 10px;
+  font-size: 1em;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .home-page {
+    padding: 10px;
+  }
+  
+  .image-item {
+    width: 150px; /* Smaller size for smaller screens */
+  }
+  
+  .price-tag {
+    font-size: 1em;
+    padding: 4px 8px;
+  }
+  
+  h1 {
+    font-size: 2em;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+  }
+}

@@ -1,0 +1,50 @@
+/* src/Navbar.css */
+
+.logo-image {
+  height: 55px; /* Adjust the height as needed */
+  width: auto; /* Maintain aspect ratio */
+  max-width: 150px; /* Ensure the logo doesn’t get too large */
+  transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition for effects */
+}
+
+.navbar {
+  background-color: #86cdce;
+  padding: 10px 0;
+  color: white;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navbar-logo {
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-menu {
+  list-style: none; /* Ensures no bullets are shown */
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-item {
+  margin-left: 20px;
+}
+
+.navbar-link {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navbar-link:hover {
+  text-decoration: underline;
+}

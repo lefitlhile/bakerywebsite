@@ -1,0 +1,52 @@
+.menu-page {
+  display: grid;
+  gap: 15rem; 
+}
+
+.menu-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex; /* Use Flexbox for horizontal alignment */
+  flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
+  justify-content: center; /* Center items horizontally */
+  gap: 20px; /* Space between items */
+}
+
+.menu-item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  max-width: 300px;
+  flex: 1 1 calc(25% - 40px); /* Responsive item width with gaps */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  overflow: hidden; /* Ensures content doesn't overflow */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-image {
+  width: 100%; /* Fit the image within the container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px;
+}
+
+.price {
+  font-size: 1.2em;
+  color: #333;
+}
+
+.add-to-cart-button {
+  background-color: #81e6e2;
+  color: rgb(30, 28, 28);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 10px;
+}
+
+.add-to-cart-button:hover {
+  background-color: #8cd2c6;
+}
